@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+
+
+  /* Carousel */
+
+
+
+.slider {
+	background-color: #f7f7f7;
+	width: 100% !important;
+	min-height: 650px !important;
+	border-bottom: 1px solid #f7f7f7;
+  position: relative;
+}
+
+.slide {
+	text-align: center;
+	background: #f7f7f7;
+	display: none;
+
+	width: 100%;
+	height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.courselbgimage1 {
+  background-image: linear-gradient(rgb(53, 92, 125,0.8), rgb(53, 92, 125,0.8)), url('../images/image1.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+.courselbgimage2 {
+  background-image: linear-gradient(rgb(53, 92, 125,0.8), rgb(53, 92, 125,0.8)), url('../images/image2.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 650px !important;
+  top:0rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
+  color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.overlay span {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 800;
+  font-style: normal; 
+}
+
+.aboutthechurch {
+  
+  height: auto;
+ 
+}
+
+.aboutthechurch > div:nth-child(2) {
+  display: flex;
+  background-color: #355c7d;
+  justify-content: center;
+}
+
+.aboutthechurch > div:nth-child(2)>div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  width: 95% !important;
+}
+
+.aboutthechurch > div:nth-child(2)  h1 {
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.aboutthechurch > div:nth-child(2)  p {
+  font-size: 16px;
+  line-height: 35px;
+  color: #ffffff;
+  font-style: normal;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.contactus {
+  height: auto;
+}
+
+
+.contactus>div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+.contactus>div:nth-child(1) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95% !important;
+  font-family: 'Arvo', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 50px;
+    color: #355c7d;
+    text-align: center;
+}
+
+.contactus>div:nth-child(2) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  color: #355c7d;
+  gap: 15px;
+  text-align: center;
+  
+}
+
+.contactus>div:nth-child(2)> div {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.joinusbtn {
+  color: #f6f3ed;
+  cursor: pointer;
+  background-color:#355c7d ;
+  padding: 8px;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  &::after {
+      display: inline-block;
+      padding-left: 5px;
+      content: "\0279E";
+      -webkit-transition: transform 0.3s ease-out;
+      -moz-transition: transform 0.3s ease-out;
+      -ms-transition: transform 0.3s ease-out;
+      -o-transition: transform 0.3s ease-out;
+      transition: transform 0.3s ease-out;
+  }
+
+  &:hover {
+      color: #f6f3ed;
+      background-color: #355c7d;
+
+      &::after {
+          -webkit-transform: translateX(4px);
+          -moz-transform: translateX(4px);
+          -ms-transform: translateX(4px);
+          -o-transform: translateX(4px);
+          transform: translateX(4px);
+      }
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .contactus>div:nth-child(2) {
+    padding-top: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 948px) {
+  .aboutthechurch {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .aboutthechurch div:nth-child(1) {
+    
+    width: 100% !important;
+  }
+  .aboutthechurch div:nth-child(2) {
+    
+    width: 100% !important;
+  }
+
+  .contactus {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    border-top: 8px solid #355c7d !important;
+    margin: 0px;
+    padding: 20px 0px;
+    margin-top: 5px;
+  }
+
+  .contactus div:nth-child(1) {
+   
+    
+    width: 100% !important;
+  }
+  .contactus div:nth-child(2) {
+    margin-top: 20px;
+    width: 100% !important;
+  }
+}
+
+
+
+

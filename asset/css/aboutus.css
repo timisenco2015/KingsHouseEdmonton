@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+
+body {
+    
+    padding:0px !important;
+    margin: 0px !important;
+
+      /*  this is where the magic happens:  */
+      background-image: url("https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&amp;amp;amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;amp;amp;auto=format&amp;amp;amp;amp;fit=crop&amp;amp;amp;amp;w=872&amp;amp;amp;amp;q=80");
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      height:120vh;
+      display: block;
+  }
+.aboutUsSectionA{
+    height: auto;
+    padding: 0px 20px;
+}
+
+.aboutUsSectionA h1 {
+    color: #355c7d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.aboutUsSectionA p {
+  font-size: 16px;
+  line-height: 35px;
+  color: #355c7d;
+  font-style: normal;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  text-align: center;    
+}
+
+
+
+.aboutUsSectionB{
+  height: auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+    position: relative;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+.picture {
+    width: 95%;
+    margin: auto;
+    height: auto;
+  }
+  .hook {
+    width: 10px;
+    height: 10px;
+    background-color: #5c5c5d;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 1px #a49c7c; 
+  }
+  .frame {
+    height: auto;
+    border: 6px solid #355c7d;
+    border-style: dashed solid;
+    z-index: 1;
+    height:auto;
+    margin-top: 5px;
+  }
+  .inside {
+    height: auto;
+    background-color:#fff ;
+    border: 10px solid #355c7d;
+    border-style: dashed solid;
+    height:auto;
+    color: #355c7d;
+  }
+
+
+  .inside h3{
+    color: #355c7d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: justify;
+  }
+
+
+  .inside p{
+    font-size: 16px;
+  line-height: 35px;
+  color: #355c7d;
+  font-style: normal;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  text-align: justify; 
+  }
+
+
+  .inside ul{
+    font-size: 16px;
+  line-height: 35px;
+  color: #355c7d;
+  font-style: normal;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  text-align: justify; 
+  }
+  
+ 
+
+  .aboutUsSectionC h1 {
+    color: #355c7d;
+    font-family: 'Style Script', cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: underline;
+    text-decoration-color: rgb(1, 178, 130);
+    text-decoration-style: wavy;
+}
+
+.aboutUsSectionC>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+
+
+.circular--portrait {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.aboutUsSectionC  .text {
+  font-size: 16px;
+  line-height: 35px;
+  color: #355c7d;
+  font-style: normal;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 650px) { 
+  .aboutUsSectionC>div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
+
+
